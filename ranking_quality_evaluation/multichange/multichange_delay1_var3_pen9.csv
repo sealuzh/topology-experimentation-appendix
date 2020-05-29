@@ -1,0 +1,288 @@
+strategy : Subtree 
+runtime : {"algorithm": 22, "total": 20672} 
+# ranking start:
+bbb/v2,fff/v2,9,3,Updated version,previous source: v1 / previous target: v1
+fff/v2,mmm/v2,7,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ccc/v2,5,3,Updated version,previous source: v1 / previous target: v1
+ccc/v2,hhh/v2,3,3,Updated version,previous source: v1 / previous target: v1
+mmm/v1,ppp/v1,3,3,Removed call,
+bbb/v2,ddd/v2,3,3,Updated version,previous source: v1 / previous target: v1
+mmm/v2,sss/v1,2,3,Calling new service,
+ccc/v2,ggg/v2,1,2,Updated version,previous source: v1 / previous target: v1
+hhh/v2,jjj/v1,1,2,Updated source version,previous source: v1
+hhh/v1,iii/v1,1,2,Removed call,
+fff/v2,nnn/v1,1,2,Updated source version,previous source: v1
+mmm/v2,nnn/v1,1,2,Calling existing endpoint,
+sss/v1,ttt/v1,1,2,Calling new service,
+ppp/v1,qqq/v1,1,2,Removed call,
+ppp/v1,rrr/v1,1,2,Removed call,
+ddd/v2,lll/v1,1,2,Updated source version,previous source: v1
+ddd/v2,kkk/v1,1,2,Calling new service,
+bbb/v2,ooo/v1,1,2,Calling new service,
+bbb/v1,eee/v1,1,2,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : SubtreeWithUncertainty 
+runtime : {"algorithm": 20, "total": 20670} 
+# ranking start:
+bbb/v2,fff/v2,11,3,Updated version,previous source: v1 / previous target: v1
+fff/v2,mmm/v2,9,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ccc/v2,7,3,Updated version,previous source: v1 / previous target: v1
+mmm/v2,sss/v1,6,3,Calling new service,
+ccc/v2,hhh/v2,5,3,Updated version,previous source: v1 / previous target: v1
+sss/v1,ttt/v1,5,3,Calling new service,
+ddd/v2,kkk/v1,5,3,Calling new service,
+bbb/v2,ddd/v2,5,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ooo/v1,5,3,Calling new service,
+ccc/v2,ggg/v2,3,2,Updated version,previous source: v1 / previous target: v1
+hhh/v2,jjj/v1,3,2,Updated source version,previous source: v1
+fff/v2,nnn/v1,3,2,Updated source version,previous source: v1
+mmm/v1,ppp/v1,3,2,Removed call,
+ddd/v2,lll/v1,3,2,Updated source version,previous source: v1
+mmm/v2,nnn/v1,2,1,Calling existing endpoint,
+hhh/v1,iii/v1,1,1,Removed call,
+ppp/v1,qqq/v1,1,1,Removed call,
+ppp/v1,rrr/v1,1,1,Removed call,
+bbb/v1,eee/v1,1,1,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : SubtreeWithUncertaintyPropagation 
+runtime : {"algorithm": 31, "total": 20681} 
+# ranking start:
+bbb/v2,fff/v2,24,3,Updated version,previous source: v1 / previous target: v1
+fff/v2,mmm/v2,18,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ccc/v2,13,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ddd/v2,11,1,Updated version,previous source: v1 / previous target: v1
+mmm/v2,sss/v1,10,1,Calling new service,
+ccc/v2,hhh/v2,7,1,Updated version,previous source: v1 / previous target: v1
+sss/v1,ttt/v1,5,1,Calling new service,
+ddd/v2,kkk/v1,5,1,Calling new service,
+bbb/v2,ooo/v1,5,1,Calling new service,
+ccc/v2,ggg/v2,3,1,Updated version,previous source: v1 / previous target: v1
+hhh/v2,jjj/v1,3,1,Updated source version,previous source: v1
+fff/v2,nnn/v1,3,1,Updated source version,previous source: v1
+mmm/v1,ppp/v1,3,1,Removed call,
+ddd/v2,lll/v1,3,1,Updated source version,previous source: v1
+mmm/v2,nnn/v1,2,1,Calling existing endpoint,
+hhh/v1,iii/v1,1,1,Removed call,
+ppp/v1,qqq/v1,1,1,Removed call,
+ppp/v1,rrr/v1,1,1,Removed call,
+bbb/v1,eee/v1,1,1,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : SubtreeWithPenalty 
+runtime : {"algorithm": 33, "total": 20682} 
+# ranking start:
+bbb/v2,ccc/v2,13,3,Updated version,previous source: v1 / previous target: v1
+ccc/v2,hhh/v2,11,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ddd/v2,11,3,Updated version,previous source: v1 / previous target: v1
+hhh/v2,jjj/v1,9,2,Updated source version,previous source: v1
+bbb/v2,fff/v2,8,2,Updated version,previous source: v1 / previous target: v1
+fff/v2,mmm/v2,6,2,Updated version,previous source: v1 / previous target: v1
+mmm/v1,ppp/v1,2,2,Removed call,
+mmm/v2,sss/v1,1,2,Calling new service,
+ccc/v2,ggg/v2,0,2,Updated version,previous source: v1 / previous target: v1
+hhh/v1,iii/v1,0,2,Removed call,
+fff/v2,nnn/v1,0,2,Updated source version,previous source: v1
+mmm/v2,nnn/v1,0,2,Calling existing endpoint,
+sss/v1,ttt/v1,0,2,Calling new service,
+ppp/v1,qqq/v1,0,2,Removed call,
+ppp/v1,rrr/v1,0,2,Removed call,
+ddd/v2,lll/v1,0,2,Updated source version,previous source: v1
+ddd/v2,kkk/v1,0,2,Calling new service,
+bbb/v2,ooo/v1,0,2,Calling new service,
+bbb/v1,eee/v1,0,2,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : SubtreeWithUncertaintyPropagationAndPenalty 
+runtime : {"algorithm": 28, "total": 20677} 
+# ranking start:
+bbb/v2,fff/v2,24,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ccc/v2,22,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ddd/v2,20,3,Updated version,previous source: v1 / previous target: v1
+fff/v2,mmm/v2,18,3,Updated version,previous source: v1 / previous target: v1
+ccc/v2,hhh/v2,16,3,Updated version,previous source: v1 / previous target: v1
+hhh/v2,jjj/v1,12,1,Updated source version,previous source: v1
+mmm/v2,sss/v1,10,1,Calling new service,
+sss/v1,ttt/v1,5,1,Calling new service,
+ddd/v2,kkk/v1,5,1,Calling new service,
+bbb/v2,ooo/v1,5,1,Calling new service,
+ccc/v2,ggg/v2,3,1,Updated version,previous source: v1 / previous target: v1
+fff/v2,nnn/v1,3,1,Updated source version,previous source: v1
+mmm/v1,ppp/v1,3,1,Removed call,
+ddd/v2,lll/v1,3,1,Updated source version,previous source: v1
+mmm/v2,nnn/v1,2,1,Calling existing endpoint,
+hhh/v1,iii/v1,1,1,Removed call,
+ppp/v1,qqq/v1,1,1,Removed call,
+ppp/v1,rrr/v1,1,1,Removed call,
+bbb/v1,eee/v1,1,1,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : ResponseTimeAnalysis 
+runtime : {"algorithm": 151, "total": 20801} 
+# ranking start:
+hhh/v2,jjj/v1,3,3,Updated source version,previous source: v1
+ccc/v2,hhh/v2,2,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ccc/v2,1,3,Updated version,previous source: v1 / previous target: v1
+ddd/v2,kkk/v1,1,3,Calling new service,
+bbb/v2,ddd/v2,1,3,Updated version,previous source: v1 / previous target: v1
+ccc/v2,ggg/v2,0,3,Updated version,previous source: v1 / previous target: v1
+hhh/v1,iii/v1,0,3,Removed call,
+fff/v2,nnn/v1,0,3,Updated source version,previous source: v1
+mmm/v2,nnn/v1,0,3,Calling existing endpoint,
+sss/v1,ttt/v1,0,3,Calling new service,
+mmm/v2,sss/v1,0,3,Calling new service,
+ppp/v1,qqq/v1,0,3,Removed call,
+ppp/v1,rrr/v1,0,3,Removed call,
+mmm/v1,ppp/v1,0,3,Removed call,
+fff/v2,mmm/v2,0,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,fff/v2,0,3,Updated version,previous source: v1 / previous target: v1
+ddd/v2,lll/v1,0,3,Updated source version,previous source: v1
+bbb/v2,ooo/v1,0,3,Calling new service,
+bbb/v1,eee/v1,0,3,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : ResponseTimeAnalysisWithPenalty 
+runtime : {"algorithm": 152, "total": 20802} 
+# ranking start:
+hhh/v2,jjj/v1,27,3,Updated source version,previous source: v1
+ccc/v2,hhh/v2,18,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ccc/v2,9,3,Updated version,previous source: v1 / previous target: v1
+ddd/v2,kkk/v1,9,3,Calling new service,
+bbb/v2,ddd/v2,9,3,Updated version,previous source: v1 / previous target: v1
+ccc/v2,ggg/v2,0,3,Updated version,previous source: v1 / previous target: v1
+hhh/v1,iii/v1,0,3,Removed call,
+fff/v2,nnn/v1,0,3,Updated source version,previous source: v1
+mmm/v2,nnn/v1,0,3,Calling existing endpoint,
+sss/v1,ttt/v1,0,3,Calling new service,
+mmm/v2,sss/v1,0,3,Calling new service,
+ppp/v1,qqq/v1,0,3,Removed call,
+ppp/v1,rrr/v1,0,3,Removed call,
+mmm/v1,ppp/v1,0,3,Removed call,
+fff/v2,mmm/v2,0,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,fff/v2,0,3,Updated version,previous source: v1 / previous target: v1
+ddd/v2,lll/v1,0,3,Updated source version,previous source: v1
+bbb/v2,ooo/v1,0,3,Calling new service,
+bbb/v1,eee/v1,0,3,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : ResponseTimeAnalysisWithUncertaintyAndPenalty 
+runtime : {"algorithm": 140, "total": 20789} 
+# ranking start:
+hhh/v2,jjj/v1,30,3,Updated source version,previous source: v1
+ccc/v2,hhh/v2,21,3,Updated version,previous source: v1 / previous target: v1
+ddd/v2,kkk/v1,14,3,Calling new service,
+bbb/v2,ccc/v2,12,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ddd/v2,12,3,Updated version,previous source: v1 / previous target: v1
+sss/v1,ttt/v1,5,1,Calling new service,
+mmm/v2,sss/v1,5,1,Calling new service,
+bbb/v2,ooo/v1,5,1,Calling new service,
+ccc/v2,ggg/v2,3,1,Updated version,previous source: v1 / previous target: v1
+fff/v2,nnn/v1,3,1,Updated source version,previous source: v1
+fff/v2,mmm/v2,3,1,Updated version,previous source: v1 / previous target: v1
+bbb/v2,fff/v2,3,1,Updated version,previous source: v1 / previous target: v1
+ddd/v2,lll/v1,3,1,Updated source version,previous source: v1
+mmm/v2,nnn/v1,2,1,Calling existing endpoint,
+hhh/v1,iii/v1,1,1,Removed call,
+ppp/v1,qqq/v1,1,1,Removed call,
+ppp/v1,rrr/v1,1,1,Removed call,
+mmm/v1,ppp/v1,1,1,Removed call,
+bbb/v1,eee/v1,1,1,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : HybridWithUncertainty 
+runtime : {"algorithm": 141, "total": 20791} 
+# ranking start:
+bbb/v2,fff/v2,11,3,Updated version,previous source: v1 / previous target: v1
+fff/v2,mmm/v2,9,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ccc/v2,8,3,Updated version,previous source: v1 / previous target: v1
+ccc/v2,hhh/v2,7,3,Updated version,previous source: v1 / previous target: v1
+hhh/v2,jjj/v1,6,3,Updated source version,previous source: v1
+mmm/v2,sss/v1,6,3,Calling new service,
+ddd/v2,kkk/v1,6,3,Calling new service,
+bbb/v2,ddd/v2,6,3,Updated version,previous source: v1 / previous target: v1
+sss/v1,ttt/v1,5,2,Calling new service,
+bbb/v2,ooo/v1,5,2,Calling new service,
+ccc/v2,ggg/v2,3,2,Updated version,previous source: v1 / previous target: v1
+fff/v2,nnn/v1,3,2,Updated source version,previous source: v1
+mmm/v1,ppp/v1,3,2,Removed call,
+ddd/v2,lll/v1,3,2,Updated source version,previous source: v1
+mmm/v2,nnn/v1,2,1,Calling existing endpoint,
+hhh/v1,iii/v1,1,1,Removed call,
+ppp/v1,qqq/v1,1,1,Removed call,
+ppp/v1,rrr/v1,1,1,Removed call,
+bbb/v1,eee/v1,1,1,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : HybridWithUncertaintyPropagation 
+runtime : {"algorithm": 114, "total": 20764} 
+# ranking start:
+bbb/v2,fff/v2,24,3,Updated version,previous source: v1 / previous target: v1
+fff/v2,mmm/v2,18,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ccc/v2,14,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ddd/v2,12,1,Updated version,previous source: v1 / previous target: v1
+mmm/v2,sss/v1,10,1,Calling new service,
+ccc/v2,hhh/v2,9,1,Updated version,previous source: v1 / previous target: v1
+hhh/v2,jjj/v1,6,1,Updated source version,previous source: v1
+ddd/v2,kkk/v1,6,1,Calling new service,
+sss/v1,ttt/v1,5,1,Calling new service,
+bbb/v2,ooo/v1,5,1,Calling new service,
+ccc/v2,ggg/v2,3,1,Updated version,previous source: v1 / previous target: v1
+fff/v2,nnn/v1,3,1,Updated source version,previous source: v1
+mmm/v1,ppp/v1,3,1,Removed call,
+ddd/v2,lll/v1,3,1,Updated source version,previous source: v1
+mmm/v2,nnn/v1,2,1,Calling existing endpoint,
+hhh/v1,iii/v1,1,1,Removed call,
+ppp/v1,qqq/v1,1,1,Removed call,
+ppp/v1,rrr/v1,1,1,Removed call,
+bbb/v1,eee/v1,1,1,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : HybridWithUncertaintyAndPenalty 
+runtime : {"algorithm": 122, "total": 20772} 
+# ranking start:
+hhh/v2,jjj/v1,30,3,Updated source version,previous source: v1
+ccc/v2,hhh/v2,23,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ccc/v2,16,3,Updated version,previous source: v1 / previous target: v1
+ddd/v2,kkk/v1,14,3,Calling new service,
+bbb/v2,ddd/v2,14,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,fff/v2,11,1,Updated version,previous source: v1 / previous target: v1
+fff/v2,mmm/v2,9,1,Updated version,previous source: v1 / previous target: v1
+mmm/v2,sss/v1,6,1,Calling new service,
+sss/v1,ttt/v1,5,1,Calling new service,
+bbb/v2,ooo/v1,5,1,Calling new service,
+ccc/v2,ggg/v2,3,1,Updated version,previous source: v1 / previous target: v1
+fff/v2,nnn/v1,3,1,Updated source version,previous source: v1
+mmm/v1,ppp/v1,3,1,Removed call,
+ddd/v2,lll/v1,3,1,Updated source version,previous source: v1
+mmm/v2,nnn/v1,2,1,Calling existing endpoint,
+hhh/v1,iii/v1,1,1,Removed call,
+ppp/v1,qqq/v1,1,1,Removed call,
+ppp/v1,rrr/v1,1,1,Removed call,
+bbb/v1,eee/v1,1,1,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : HybridWithUncertaintyPropagationAndPenalty 
+runtime : {"algorithm": 131, "total": 20781} 
+# ranking start:
+hhh/v2,jjj/v1,30,3,Updated source version,previous source: v1
+ccc/v2,hhh/v2,25,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,fff/v2,24,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ccc/v2,22,3,Updated version,previous source: v1 / previous target: v1
+bbb/v2,ddd/v2,20,3,Updated version,previous source: v1 / previous target: v1
+fff/v2,mmm/v2,18,3,Updated version,previous source: v1 / previous target: v1
+ddd/v2,kkk/v1,14,1,Calling new service,
+mmm/v2,sss/v1,10,1,Calling new service,
+sss/v1,ttt/v1,5,1,Calling new service,
+bbb/v2,ooo/v1,5,1,Calling new service,
+ccc/v2,ggg/v2,3,1,Updated version,previous source: v1 / previous target: v1
+fff/v2,nnn/v1,3,1,Updated source version,previous source: v1
+mmm/v1,ppp/v1,3,1,Removed call,
+ddd/v2,lll/v1,3,1,Updated source version,previous source: v1
+mmm/v2,nnn/v1,2,1,Calling existing endpoint,
+hhh/v1,iii/v1,1,1,Removed call,
+ppp/v1,qqq/v1,1,1,Removed call,
+ppp/v1,rrr/v1,1,1,Removed call,
+bbb/v1,eee/v1,1,1,Removed call,
+aaa/v1,bbb/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------

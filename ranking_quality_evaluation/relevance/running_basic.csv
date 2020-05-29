@@ -1,0 +1,10 @@
+from,to,relevance
+frontend/v2,orders/v2,4
+frontend/v2,product/v1,4
+orders/v2,shipping/v1,3
+product/v1,recommendation/v1,3
+orders/v2,payment/v1,2
+edge/v1,frontend/v2,2
+frontend/v2,search/v1,2
+frontend/v1,details/v1,1
+payment/v1,shipping/v1,1

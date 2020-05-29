@@ -1,0 +1,156 @@
+strategy : Subtree 
+runtime : {"algorithm": 21, "total": 9073} 
+# ranking start:
+frontend/v2,orders/v2,4,3,Updated version,previous source: v1 / previous target: v1
+orders/v2,payment/v1,2,3,Updated source version,previous source: v1
+frontend/v2,product/v1,2,3,Calling new service,
+frontend/v2,search/v1,1,2,Updated source version,previous source: v1
+payment/v1,shipping/v1,1,2,Common call,
+orders/v2,shipping/v1,1,2,Calling existing endpoint,
+product/v1,recommendation/v1,1,2,Calling new service,
+frontend/v1,details/v1,1,2,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : SubtreeWithUncertainty 
+runtime : {"algorithm": 18, "total": 9070} 
+# ranking start:
+frontend/v2,orders/v2,6,3,Updated version,previous source: v1 / previous target: v1
+orders/v2,payment/v1,4,3,Updated source version,previous source: v1
+frontend/v2,product/v1,4,3,Calling new service,
+frontend/v2,search/v1,3,2,Updated source version,previous source: v1
+product/v1,recommendation/v1,3,2,Calling new service,
+payment/v1,shipping/v1,1,2,Common call,
+orders/v2,shipping/v1,1,2,Calling existing endpoint,
+frontend/v1,details/v1,1,2,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : SubtreeWithUncertaintyPropagation 
+runtime : {"algorithm": 15, "total": 9067} 
+# ranking start:
+frontend/v2,orders/v2,8,3,Updated version,previous source: v1 / previous target: v1
+frontend/v2,product/v1,6,3,Calling new service,
+orders/v2,payment/v1,4,3,Updated source version,previous source: v1
+frontend/v2,search/v1,3,2,Updated source version,previous source: v1
+product/v1,recommendation/v1,3,2,Calling new service,
+payment/v1,shipping/v1,1,2,Common call,
+orders/v2,shipping/v1,1,2,Calling existing endpoint,
+frontend/v1,details/v1,1,2,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : SubtreeWithPenalty 
+runtime : {"algorithm": 17, "total": 9069} 
+# ranking start:
+frontend/v2,orders/v2,8,3,Updated version,previous source: v1 / previous target: v1
+orders/v2,payment/v1,6,3,Updated source version,previous source: v1
+frontend/v2,product/v1,1,3,Calling new service,
+frontend/v2,search/v1,0,2,Updated source version,previous source: v1
+payment/v1,shipping/v1,0,2,Common call,
+orders/v2,shipping/v1,0,2,Calling existing endpoint,
+product/v1,recommendation/v1,0,2,Calling new service,
+frontend/v1,details/v1,0,2,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : SubtreeWithUncertaintyPropagationAndPenalty 
+runtime : {"algorithm": 25, "total": 9076} 
+# ranking start:
+frontend/v2,orders/v2,13,3,Updated version,previous source: v1 / previous target: v1
+orders/v2,payment/v1,9,3,Updated source version,previous source: v1
+frontend/v2,product/v1,6,3,Calling new service,
+frontend/v2,search/v1,3,3,Updated source version,previous source: v1
+product/v1,recommendation/v1,3,3,Calling new service,
+payment/v1,shipping/v1,1,2,Common call,
+orders/v2,shipping/v1,1,2,Calling existing endpoint,
+frontend/v1,details/v1,1,2,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : ResponseTimeAnalysis 
+runtime : {"algorithm": 72, "total": 9124} 
+# ranking start:
+orders/v2,payment/v1,2,3,Updated source version,previous source: v1
+payment/v1,shipping/v1,1,3,Common call,
+orders/v2,shipping/v1,1,3,Calling existing endpoint,
+frontend/v2,orders/v2,1,3,Updated version,previous source: v1 / previous target: v1
+frontend/v2,search/v1,0,2,Updated source version,previous source: v1
+product/v1,recommendation/v1,0,2,Calling new service,
+frontend/v2,product/v1,0,2,Calling new service,
+frontend/v1,details/v1,0,2,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : ResponseTimeAnalysisWithPenalty 
+runtime : {"algorithm": 101, "total": 9153} 
+# ranking start:
+orders/v2,payment/v1,10,3,Updated source version,previous source: v1
+payment/v1,shipping/v1,5,3,Common call,
+orders/v2,shipping/v1,5,3,Calling existing endpoint,
+frontend/v2,orders/v2,5,3,Updated version,previous source: v1 / previous target: v1
+frontend/v2,search/v1,0,2,Updated source version,previous source: v1
+product/v1,recommendation/v1,0,2,Calling new service,
+frontend/v2,product/v1,0,2,Calling new service,
+frontend/v1,details/v1,0,2,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : ResponseTimeAnalysisWithUncertaintyAndPenalty 
+runtime : {"algorithm": 81, "total": 9133} 
+# ranking start:
+orders/v2,payment/v1,13,3,Updated source version,previous source: v1
+frontend/v2,orders/v2,8,3,Updated version,previous source: v1 / previous target: v1
+payment/v1,shipping/v1,6,3,Common call,
+orders/v2,shipping/v1,6,3,Calling existing endpoint,
+frontend/v2,search/v1,3,2,Updated source version,previous source: v1
+product/v1,recommendation/v1,3,2,Calling new service,
+frontend/v2,product/v1,3,2,Calling new service,
+frontend/v1,details/v1,1,1,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : HybridWithUncertainty 
+runtime : {"algorithm": 82, "total": 9134} 
+# ranking start:
+frontend/v2,orders/v2,7,3,Updated version,previous source: v1 / previous target: v1
+orders/v2,payment/v1,6,3,Updated source version,previous source: v1
+frontend/v2,product/v1,4,3,Calling new service,
+frontend/v2,search/v1,3,2,Updated source version,previous source: v1
+product/v1,recommendation/v1,3,2,Calling new service,
+payment/v1,shipping/v1,2,2,Common call,
+orders/v2,shipping/v1,2,2,Calling existing endpoint,
+frontend/v1,details/v1,1,1,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : HybridWithUncertaintyPropagation 
+runtime : {"algorithm": 110, "total": 9162} 
+# ranking start:
+frontend/v2,orders/v2,9,3,Updated version,previous source: v1 / previous target: v1
+orders/v2,payment/v1,6,3,Updated source version,previous source: v1
+frontend/v2,product/v1,6,3,Calling new service,
+frontend/v2,search/v1,3,2,Updated source version,previous source: v1
+product/v1,recommendation/v1,3,2,Calling new service,
+payment/v1,shipping/v1,2,2,Common call,
+orders/v2,shipping/v1,2,2,Calling existing endpoint,
+frontend/v1,details/v1,1,1,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : HybridWithUncertaintyAndPenalty 
+runtime : {"algorithm": 133, "total": 9185} 
+# ranking start:
+orders/v2,payment/v1,14,3,Updated source version,previous source: v1
+frontend/v2,orders/v2,11,1,Updated version,previous source: v1 / previous target: v1
+payment/v1,shipping/v1,6,1,Common call,
+orders/v2,shipping/v1,6,1,Calling existing endpoint,
+frontend/v2,product/v1,4,1,Calling new service,
+frontend/v2,search/v1,3,1,Updated source version,previous source: v1
+product/v1,recommendation/v1,3,1,Calling new service,
+frontend/v1,details/v1,1,1,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
+strategy : HybridWithUncertaintyPropagationAndPenalty 
+runtime : {"algorithm": 101, "total": 9153} 
+# ranking start:
+orders/v2,payment/v1,14,3,Updated source version,previous source: v1
+frontend/v2,orders/v2,13,1,Updated version,previous source: v1 / previous target: v1
+payment/v1,shipping/v1,6,1,Common call,
+orders/v2,shipping/v1,6,1,Calling existing endpoint,
+frontend/v2,product/v1,6,1,Calling new service,
+frontend/v2,search/v1,3,1,Updated source version,previous source: v1
+product/v1,recommendation/v1,3,1,Calling new service,
+frontend/v1,details/v1,1,1,Removed call,
+edge/v1,frontend/v2,-1,0,Updated target version,previous target: v1
+--------------------------------------------------
